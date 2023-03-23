@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/framelayout"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/custom_bar2"
+        android:layout_height="240dp">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imageviewdanhsachalbum"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="180dp"
+            android:layout_height="180dp"/>
+
+        <TextView
+            android:id="@+id/textviewdanhsachalbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            android:lines="1"
+            android:maxWidth="200dp"
+            android:text="album"
+            android:textColor="#F8F8F8"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textviewdanhsachtencasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Various Artists"
+            android:layout_marginLeft="5dp"
+            android:textColor="#C1B2B2"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

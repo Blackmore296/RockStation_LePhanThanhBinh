@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appnghenhac">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application
+        android:name=".Background.ChanelNoti"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppNgheNhac">
+        <activity android:name=".Activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.PlaynhacActivity"
+            android:taskAffinity=""
+            android:launchMode="singleInstance"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.DanhsachtatcaAlbumActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.DanhsachctchudetheochudeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.DanhsachtatcachudeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.DanhsachcacplaylistActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.DanhsachbaihatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".Background.BroadcastReceiverAction"/>
+        <service android:name=".Background.ForegroundServiceControl"/>
+    </application>
+</manifest>
